@@ -1,0 +1,104 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color:palegreen;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.receiptPaper{
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    resize: none;
+    background-color: whitesmoke;
+    height: 5px;
+    width: 215;
+    border-bottom: 5px solid #e6e5;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+.receiptPaper > p {
+    text-align: end;
+    font-size: 22px;
+    font-family: 'Fake Receipt', sans-serif;
+}
+.calContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #0f0f0f;
+    padding: 15px;
+    width: fit-content;
+    border: 5px solid #e7e3e3;
+    border-radius: 10px;
+}
+#screen {
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 48px;
+}
+.screenContainer {
+     width: 315px;
+     height: 75px;
+     border: 2px solid #f7f3f3;
+     border-radius: 5px;
+     background-color: #f8f5f5;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 10px;
+}
+.buttonRow {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.inputButton {
+    width: 75px;
+    background-color: #4b80c5;
+}
+.inputButton {
+    position: relative;
+    top: 0px;
+    height: 75px;
+    font-size: 32px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #d8eb35;
+    border: 1px solid #d8eb35;
+    text-shadow: 1px 1px 1px #3fd5e9;
+    transition: All 250ms ease;
+}
+.inputButton:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+    transition: All 250ms ease;
+}
+
+.opButton {
+    background-color: #0eff36;
+    color: #fff;
+}
+
+#eq {
+    width: 155px;
+}
+
+#clear, #del {
+    background-color: #f089b0;
+    color:#fff
+}
